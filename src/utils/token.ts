@@ -1,5 +1,5 @@
-var randomBytes = require('random-bytes')
+import * as crypto from "crypto";
 
 export function generateRandomToken(len = 80) {
-  return randomBytes.sync(len / 2).toString("hex");
+  return crypto.randomBytes(len / 2).toString("hex");
 }

@@ -1,10 +1,13 @@
-import crypto from "bcrypt";
-import { ICodeChallenge } from "./verifier";
+import * as crypto from "crypto";
+
+import { base64urlencode } from "../utils/base64.js";
+import { ICodeChallenge } from "./verifier.js";
 
 export class S256Verifier implements ICodeChallenge {
   public readonly method = "S256";
 
   verifyCodeChallenge(codeVerifier: string, codeChallenge: string): boolean {
-    return crypto.compareSync(codeVerifier,codeChallenge);
+    const codeHash = crypto.createHash("sha256").update(codeVerifier).digest();
+    return codeChallenge === base64urlencode(codeHash);
   }
 }
