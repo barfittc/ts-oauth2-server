@@ -1,4 +1,4 @@
-import { ICodeChallenge } from "./verifier.js";
+import { ICodeChallenge } from "./verifier";
 
 export class PlainVerifier implements ICodeChallenge {
   public readonly method = "plain";
