@@ -5,6 +5,7 @@
   "author": "Jason Raimondi <jason@raimondi.us>",
   "funding": "https://github.com/barfittc/ts-oauth2-server",
   "license": "MIT",
+  "main": "src/index.ts",
   "private": false,
   "scripts": {
     "clean": "rimraf dist",
