@@ -1,6 +1,6 @@
 {
   "name": "@barfittc/ts-oauth2-server",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "type": "module",
   "author": "Jason Raimondi <jason@raimondi.us>",
   "funding": "https://github.com/barfittc/ts-oauth2-server",
