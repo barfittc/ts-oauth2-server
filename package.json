@@ -1,11 +1,11 @@
 {
   "name": "@barfittc/ts-oauth2-server",
   "version": "3.0.2",
-  "packageManager": "pnpm@8.4.0",
   "type": "module",
   "author": "Jason Raimondi <jason@raimondi.us>",
-  "funding": "https://github.com/sponsors/jasonraimondi",
+  "funding": "https://github.com/barfittc/ts-oauth2-server",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "run-s clean",
@@ -27,6 +27,7 @@
     "./fastify": "./src/adapters/fastify.ts"
   },
   "publishConfig": {
+    "access": "public",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
